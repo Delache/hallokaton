@@ -1,3 +1,4 @@
+import { RecupPlayerNameService } from './../services/recup-player-name.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar-player.component.scss']
 })
 export class NavBarPlayerComponent implements OnInit {
-
-  constructor() { }
+player1: string;
+player2: string;
+  constructor(private name: RecupPlayerNameService) { }
 
   ngOnInit() {
+this.player1 = this.name.player1;
+this.player2 = this.name.player2;
   }
 
 }

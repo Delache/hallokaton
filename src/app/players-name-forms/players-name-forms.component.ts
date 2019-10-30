@@ -1,3 +1,4 @@
+import { RecupPlayerNameService } from './../services/recup-player-name.service';
 import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 
@@ -10,10 +11,13 @@ export class PlayersNameFormsComponent implements OnInit {
   player1: string;
   player2: string;
 
-  constructor(public dialogRef: MatDialogRef<PlayersNameFormsComponent>) {}
+  constructor(public dialogRef: MatDialogRef<PlayersNameFormsComponent>, private recupPlayerName: RecupPlayerNameService) {}
 
   ngOnInit() {}
+
   closeDialog() {
+    this.recupPlayerName.recupName1(this.player1);
+    this.recupPlayerName.recupName2(this.player2);
     this.dialogRef.close();
   }
 }
