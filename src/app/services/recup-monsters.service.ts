@@ -18,5 +18,9 @@ export class RecupMonstersService {
     return this.http.get(RecupMonstersService.URL+"/movies")
   }
 
+  getById(id: number) {
+    return this.http.get(RecupMonstersService.URL+"/movies/"+id)
+  }
+
 
 }

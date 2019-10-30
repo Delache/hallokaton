@@ -1,6 +1,88 @@
-<button (click)="askToAPI()">Search</button>
+<div>
+  <div >
 
-<div *ngFor="let response of result">
-  <p>{{response.name}}</p>
-  <img src="{{response.picture}}" alt="Movies">
+
+    <div>
+      <button (click)="askToAPI()">
+        <img
+        class="faceVisibleImg"
+        src="https://assetsnffrgf-a.akamaihd.net/assets/m/502013285/univ/art/502013285_univ_lsr_xl.jpg"
+        alt="citrouille"
+        />
+      </button>
+      <div >
+        <img [src]="result.movie.posterUrl"  alt="" />
+    </div>
+
+    <div>
+        <button (click)="askToAPI()">
+          <img
+          class="faceVisibleImg"
+          src="https://assetsnffrgf-a.akamaihd.net/assets/m/502013285/univ/art/502013285_univ_lsr_xl.jpg"
+          alt="citrouille"
+          />
+        </button>
+        <div >
+          <img [src]="result.movie.posterUrl" alt="" />
+        </div>
+      </div>
+
+      <div>
+          <button (click)="askToAPI()">
+            <img
+            class="faceVisibleImg"
+            src="https://assetsnffrgf-a.akamaihd.net/assets/m/502013285/univ/art/502013285_univ_lsr_xl.jpg"
+            alt="citrouille"
+            />
+          </button>
+          <div >
+            <img [src]="result.movie.posterUrl" alt="" />
+          </div>
+        </div>
+
+  </div>
+
+  <div>
+
+      <div>
+        <button (click)="askToAPI()">
+          <img
+          class="faceVisibleImg"
+          src="https://assetsnffrgf-a.akamaihd.net/assets/m/502013285/univ/art/502013285_univ_lsr_xl.jpg"
+          alt="citrouille"
+          />
+        </button>
+        <div >
+          <img [src]="result.movie.posterUrl" alt="" />
+        </div>
+      </div>
+
+      <div>
+          <button (click)="askToAPI()">
+            <img
+            class="faceVisibleImg"
+            src="https://assetsnffrgf-a.akamaihd.net/assets/m/502013285/univ/art/502013285_univ_lsr_xl.jpg"
+            alt="citrouille"
+            />
+          </button>
+          <div >
+            <img [src]="result.movie.posterUrl" alt="" />
+          </div>
+        </div>
+
+        <div>
+            <button (click)="askToAPI()">
+              <img
+              class="faceVisibleImg"
+              src="https://assetsnffrgf-a.akamaihd.net/assets/m/502013285/univ/art/502013285_univ_lsr_xl.jpg"
+              alt="citrouille"
+              />
+            </button>
+            <div >
+              <img [src]="result.movie.posterUrl" alt="" />
+            </div>
+          </div>
+
+    </div>
 </div>
+
