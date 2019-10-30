@@ -1,23 +1,16 @@
 <div class="navBarPage">
-
   <app-nav-bar-player></app-nav-bar-player>
-<!--
+
+  <div class="monsterGalery">
+    <div class="monsterPlayer1">
+      <div *ngFor="let monster of monsters">
+        <img src="{{ monster.picture }}" alt="Monstre" />
+      </div>
+    </div>
+    <div class="monsterPlayer1">
+      <div *ngFor="let monster of monsters">
+        <img src="{{ monster.picture }}" alt="Monstre" />
+      </div>
+    </div>
+  </div>
 </div>
-  <div class='playerBar'>
-    <div classe='player1'>
-      <div>{{player1Name}}</div>
-      <div>{{player1Avatar}}</div>
-      <div>{{player1Score}}</div>
-    </div>
-    <div class='player2'>
-      <div>{{player2Name}}</div>
-      <div>{{player2Avatar}}</div>
-      <div>{{player2Score}}</div>
-    </div>
-  </div>
-  <div class='monsterGalery'>
-    <div *ngFor="let monster of monsters">
-    </div>
-    <div *ngFor="let monster of monsters">
-    </div> -->
-  </div>
