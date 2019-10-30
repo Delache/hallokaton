@@ -1,4 +1,7 @@
+import { Monster } from './../../models/monster';
+import { RecupMonstersService } from './../../services/recup-monsters.service';
 import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-monster-choice',
@@ -6,10 +9,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./monster-choice.component.scss']
 })
 export class MonsterChoiceComponent implements OnInit {
-
-  constructor() { }
+  monsters: Monster;
+  constructor(private service: RecupMonstersService) { }
 
   ngOnInit() {
+    this.service.getAllMonsters()
+    .subscribe((response: any) => {
+      this.monsters = response.monsters; });
   }
-
 }
