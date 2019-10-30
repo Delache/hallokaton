@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './pages/home/home.component';
 import { MonsterComponent } from './monster/monster.component';
+import { MonsterChoiceComponent } from './page/monster-choice/monster-choice.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { MonsterComponent } from './monster/monster.component';
     HomeComponent,
     MovieComponent,
     MonsterComponent,
+    MonsterChoiceComponent,
   ],
   imports: [
     BrowserModule,
