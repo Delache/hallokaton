@@ -13,9 +13,12 @@ import { AppComponent } from './app.component';
 import { ListMonstersComponent } from './list-monsters/list-monsters.component';
 import { MonsterComponent } from './monster/monster.component';
 import { MovieComponent } from './movie/movie.component';
+import { ListMoviesComponent } from './pages/fightPage/list-movies/list-movies.component';
 import { HomeComponent } from './pages/home/home.component';
-import { PlayersNameFormsComponent } from './players-name-forms/players-name-forms.component';
 import { MonsterChoiceComponent } from './pages/monster-choice/monster-choice.component';
+import { PlayersNameFormsComponent } from './players-name-forms/players-name-forms.component';
+
+
 
 
 @NgModule({
@@ -26,14 +29,13 @@ import { MonsterChoiceComponent } from './pages/monster-choice/monster-choice.co
     MovieComponent,
     MonsterComponent,
     ListMonstersComponent,
-    MonsterChoiceComponent
-
+    MonsterChoiceComponent,
+    ListMoviesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-
     MatButtonModule,
     MatDialogModule,
     MatInputModule,
@@ -41,9 +43,9 @@ import { MonsterChoiceComponent } from './pages/monster-choice/monster-choice.co
     FormsModule,
     HttpClientModule
   ],
+
   entryComponents: [
     PlayersNameFormsComponent
-
   ],
   providers: [],
   bootstrap: [AppComponent]

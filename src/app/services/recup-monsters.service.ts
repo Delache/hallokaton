@@ -14,4 +14,9 @@ export class RecupMonstersService {
     return this.http.get(RecupMonstersService.URL+"/monsters")
   }
 
+  getAllMovies() {
+    return this.http.get(RecupMonstersService.URL+"/movies")
+  }
+
+
 }
