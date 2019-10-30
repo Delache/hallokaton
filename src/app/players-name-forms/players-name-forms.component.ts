@@ -15,6 +15,5 @@ export class PlayersNameFormsComponent implements OnInit {
   ngOnInit() {}
   closeDialog() {
     this.dialogRef.close();
-
   }
 }

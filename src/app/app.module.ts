@@ -17,6 +17,7 @@ import { ListMoviesComponent } from './pages/fightPage/list-movies/list-movies.c
 import { HomeComponent } from './pages/home/home.component';
 import { MonsterChoiceComponent } from './pages/monster-choice/monster-choice.component';
 import { PlayersNameFormsComponent } from './players-name-forms/players-name-forms.component';
+import { NavBarPlayerComponent } from './nav-bar-player/nav-bar-player.component';
 
 
 
@@ -30,7 +31,8 @@ import { PlayersNameFormsComponent } from './players-name-forms/players-name-for
     MonsterComponent,
     ListMonstersComponent,
     MonsterChoiceComponent,
-    ListMoviesComponent
+    ListMoviesComponent,
+    NavBarPlayerComponent
   ],
   imports: [
     BrowserModule,
