@@ -1,18 +1,21 @@
-import { MovieComponent } from './movie/movie.component';
-import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import {MatButtonModule} from '@angular/material/button';
-import {MatInputModule} from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomeComponent } from './pages/home/home.component';
-import { MatDialogModule } from '@angular/material/dialog';
-import { PlayersNameFormsComponent } from './players-name-forms/players-name-forms.component';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { FormsModule } from '@angular/forms';
+import { ListMonstersComponent } from './list-monsters/list-monsters.component';
 import { MonsterComponent } from './monster/monster.component';
+import { MovieComponent } from './movie/movie.component';
+import { HomeComponent } from './pages/home/home.component';
+import { PlayersNameFormsComponent } from './players-name-forms/players-name-forms.component';
+
 
 
 @NgModule({
@@ -22,11 +25,14 @@ import { MonsterComponent } from './monster/monster.component';
     PlayersNameFormsComponent,
     MovieComponent,
     MonsterComponent,
+    ListMonstersComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+
     MatButtonModule,
     MatDialogModule,
     MatInputModule,
@@ -34,7 +40,9 @@ import { MonsterComponent } from './monster/monster.component';
     FormsModule
   ],
   entryComponents: [
-    PlayersNameFormsComponent
+    PlayersNameFormsComponent,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
