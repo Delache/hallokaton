@@ -10,22 +10,25 @@ export class ListMoviesComponent implements OnInit {
   result: {};
   posterUrl: string;
 
+
   constructor(private service: RecupMonstersService) { }
 
   ngOnInit() {
   }
 
 
-  Array=[]
+  array=[]
   askToAPI() {
     const randID = Math.floor(Math.random()*80) +1;
     this.service.getById(randID)
     .subscribe((maCarteRandom) => {
       this.result = maCarteRandom;
-      this.Array.push(this.result)
+      this.array.push(this.result)
 
-      console.log(this.Array)
+      console.log(this.array)
       })
+
+   
   }
 // this.service.getAllMovies()
     // .subscribe((response: any)=> {
