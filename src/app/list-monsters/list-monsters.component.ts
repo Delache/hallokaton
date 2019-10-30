@@ -12,9 +12,10 @@ export class ListMonstersComponent implements OnInit {
 
   ngOnInit() {
   }
+  
   askToAPI() {
     this.service.getAllMonsters()
-    .subscribe((response:any)=> {
+    .subscribe((response: any)=> {
       this.result = response.monsters
       console.log(this.result)
     })

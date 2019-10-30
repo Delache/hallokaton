@@ -15,6 +15,7 @@ import { MonsterComponent } from './monster/monster.component';
 import { MovieComponent } from './movie/movie.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PlayersNameFormsComponent } from './players-name-forms/players-name-forms.component';
+import { ListMoviesComponent } from './pages/fightPage/list-movies/list-movies.component';
 
 
 
@@ -25,24 +26,23 @@ import { PlayersNameFormsComponent } from './players-name-forms/players-name-for
     PlayersNameFormsComponent,
     MovieComponent,
     MonsterComponent,
-    ListMonstersComponent
-
+    ListMonstersComponent,
+    ListMoviesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-
     MatButtonModule,
     MatDialogModule,
     MatInputModule,
     MatFormFieldModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
+
   entryComponents: [
     PlayersNameFormsComponent,
-    HttpClientModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]
