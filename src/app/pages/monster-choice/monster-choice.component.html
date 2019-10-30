@@ -1,6 +1,4 @@
-<app-nav-bar-player></app-nav-bar-player>
-
-<div class='playerBar'>
+<!--div class='playerBar'>
   <div classe='player1'>
     <div>{{player1Name}}</div>
     <div>{{player1Avatar}}</div>
@@ -11,10 +9,9 @@
     <div>{{player2Avatar}}</div>
     <div>{{player2Score}}</div>
   </div>
-</div>
+</div>-->
 <div class='monsterGalery'>
   <div *ngFor="let monster of monsters">
+      <p>{{monster.name}}</p>
+      <img src="{{monster.picture}}" alt="Monstre">
   </div>
-  <div *ngFor="let monster of monsters">
-  </div>
-</div>
