@@ -11,5 +11,4 @@ export class PlayersNameFormsComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
-  sendNames() {}
 }
