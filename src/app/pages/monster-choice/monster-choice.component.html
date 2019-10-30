@@ -1,20 +1,21 @@
-<p> ca marche</p>
+<div class="navBarPage">
+  <app-nav-bar-player></app-nav-bar-player>
+  <div class='monsterGalery'>
+      <div class='monsterPlayer2'>
+        <div *ngFor="let monster of monsters">
+          <img class='monsterCard' ondblclick='getAvatarPlayer2()' src="{{monster.picture}}" alt="Monstre">
+        </div>
+      </div>
+      <div class='monsterPlayer2'>
+        <div *ngFor="let monster of monsters">
+            <label>
+                <input type="checkbox"  />
+                <div class="card">
+                  <img class='monsterCard' ondblclick='getAvatarPlayer2()' src="{{monster.picture}}" alt="Monstre">
+                  <div class="back monsterCard">{{monster.name}}</div>
+                </div>
+            </label>
+      </div>
 
-<div class='playerBar'>
-  <div classe='player1'>
-    <div>{{player1Name}}</div>
-    <div>{{player1Avatar}}</div>
-    <div>{{player1Score}}</div>
-  </div>
-  <div class='player2'>
-    <div>{{player2Name}}</div>
-    <div>{{player2Avatar}}</div>
-    <div>{{player2Score}}</div>
-  </div>
-</div>
-<div class='monsterGalery'>
-  <div *ngFor="let monster of monsters">
-  </div>
-  <div *ngFor="let monster of monsters">
-  </div>
+
 </div>

@@ -1,0 +1,105 @@
+.navBarPage{
+  background-image: url('../../../assets/images/choiceMonster.jpg');
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+}
+app-nav-bar-player{
+  color: white;
+  font-size: 1.5rem;
+}
+
+.monsterGalery{
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  margin: left;
+}
+.monsterPlayer1,.monsterPlayer2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: solid red 2px;
+  justify-content:space-between;
+}
+.monsterPlayer2{
+  flex-direction: row-reverse;
+  margin: 50px 0 0 100px;
+}
+.monsterCard{
+ width: 100px;
+ height: 160px;
+ border: solid 1px black;
+ border-radius: 5px;
+ margin:5px;
+
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+label {
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.card {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+    z-index: 20;
+}
+
+    .card div {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #FFF;
+        text-align: center;
+        line-height: 200px;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 5px;
+
+    }
+
+    .card .back {
+        background: #222;
+        color: #FFF;
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+        margin-top:-175px;
+        width: 100%;
+        height: 100%;
+    }
+
+label:hover .card {
+    -webkit-transform: rotateX(20deg);
+    transform: rotateX(20deg);
+    box-shadow: 0 20px 20px rgba(50,50,50,.2);
+}
+
+input {
+    display: none;
+}
+
+:checked + .card {
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+}
+
+label:hover :checked + .card {
+    transform: rotateX(160deg);
+    -webkit-transform: rotateX(160deg);
+    box-shadow: 0 20px 20px rgba(255,255,255,.2);
+}
