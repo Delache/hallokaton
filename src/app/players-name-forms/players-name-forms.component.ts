@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-players-name-forms',
@@ -8,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 export class PlayersNameFormsComponent implements OnInit {
   player1: string;
   player2: string;
-  constructor() {}
+
+  constructor(public dialogRef: MatDialogRef<PlayersNameFormsComponent>) {}
 
   ngOnInit() {}
+  closeDialog() {
+    this.dialogRef.close();
+
+  }
 }
