@@ -3,12 +3,12 @@
   <div class='monsterGalery'>
       <div class='monsterPlayer1'>
         <div *ngFor="let monster of monsters">
-          <img class='monsterCard' src="{{monster.picture}}" alt="Monstre">
+          <img class='monsterCard' (click)='getAvatarPlayer1()' src="{{monster.picture}}" alt="Monstre">
         </div>
       </div>
-      <div class='monsterPlayer1'>
+      <div class='monsterPlayer2'>
         <div *ngFor="let monster of monsters">
-          <img class='monsterCard' src="{{monster.picture}}" alt="Monstre">
+          <img class='monsterCard' ondblclick='getAvatarPlayer2()' src="{{monster.picture}}" alt="Monstre">
         </div>
       </div>
     </div>

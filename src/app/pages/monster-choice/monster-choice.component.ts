@@ -17,4 +17,10 @@ export class MonsterChoiceComponent implements OnInit {
     .subscribe((result: any) => {
       this.monsters = result.monsters; });
   }
+  getAvatarPlayer1() {
+    console.log('Player1');
+  }
+  getAvatarPlayer2() {
+    console.log('Player2');
+  }
 }
