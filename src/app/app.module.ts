@@ -15,7 +15,7 @@ import { MonsterComponent } from './monster/monster.component';
 import { MovieComponent } from './movie/movie.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PlayersNameFormsComponent } from './players-name-forms/players-name-forms.component';
-
+import { MonsterChoiceComponent } from './page/monster-choice/monster-choice.component';
 
 
 @NgModule({
@@ -25,7 +25,8 @@ import { PlayersNameFormsComponent } from './players-name-forms/players-name-for
     PlayersNameFormsComponent,
     MovieComponent,
     MonsterComponent,
-    ListMonstersComponent
+    ListMonstersComponent,
+    MonsterChoiceComponent,
 
   ],
   imports: [
