@@ -8,3 +8,22 @@ app-nav-bar-player{
   color: white;
   font-size: 1.5rem;
 }
+
+//body {
+//   background: #F17563;
+//    font-family: Open Sans;
+//    font-size: 50px;
+//  	color: #222;
+//}
+.monsterGalery{
+  display:flex;
+  flex-direction: row;
+}
+.monsterPlayer1,.monsterPlayer1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.monsterPlayer2{
+  flex-direction: row-reverse;
+}

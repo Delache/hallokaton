@@ -14,7 +14,7 @@ export class MonsterChoiceComponent implements OnInit {
 
   ngOnInit() {
     this.service.getAllMonsters()
-    .subscribe((response: any) => {
-      this.monsters = response.monsters; });
+    .subscribe((result: any) => {
+      this.monsters = result.monsters; });
   }
 }
