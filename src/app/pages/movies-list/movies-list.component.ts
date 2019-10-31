@@ -12,7 +12,10 @@ export class MoviesListComponent implements OnInit {
   randID1: number;
   randID2: number;
 
-  decks: any[][] = [[{},{},{}],[{},{},{}]];
+
+  // decks: any[][] = [[{},{},{}],[{},{},{}]];
+  decks: any [] = [{}, {}, {}];
+  decks2: any [] = [{}, {}, {}];
 
   constructor(private service: RecupMonstersService) {}
 
@@ -32,16 +35,26 @@ export class MoviesListComponent implements OnInit {
   // });
   // }
 
-  askToAPI(i: number, j: number){
+  askToAPI1(i: number){
     const randID1 = Math.floor(Math.random() * 82) + 1;
     this.service.getById(randID1).subscribe((maCarteRandom: any) => {
-      this.decks[i][j] = maCarteRandom.movie;
+      // this.decks[i][j] = maCarteRandom.movie;
+      this.decks[i] = maCarteRandom.movie;
   });
+
   }
+
+  askToAPI2( j: number){
+    const randID1 = Math.floor(Math.random() * 82) + 1;
+    this.service.getById(randID1).subscribe((maCarteRandom: any) => {
+      // this.decks[i][j] = maCarteRandom.movie;
+      this.decks2[j] = maCarteRandom.movie;
+  });
+
 }
   // this.service.getAllMovies()
   // .subscribe((response: any)=> {
   //   this.result = response.movies
   //   console.log(this.result)
   // })
-
+}

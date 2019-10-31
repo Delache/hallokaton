@@ -3,4 +3,10 @@
   }
   .container{
     display: flex;
+    flex-direction: column;
+    background-image: url(../../../assets/images/choiceMonster.jpg);
+    background-size: 100% 100%;
+  }
+  button{
+    background-image: black;
   }

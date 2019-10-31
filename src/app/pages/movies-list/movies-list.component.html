@@ -1,5 +1,5 @@
-<p>movies-list works!</p>
 <div class="container">
+  <app-nav-bar-player></app-nav-bar-player>
   <!-- <div>
     <button (click)="askToAPI1()">
       <img
@@ -27,19 +27,28 @@
   </div> -->
 
 
-  <div *ngFor="let deck of decks; let i=index" >
-    <div *ngFor="let card of deck; let j=index" >
-        <button (click)="askToAPI(i,j)">
+  <div class="citrouilleCarte" >
+    <div *ngFor="let card of decks; let i=index" >
+        <button (click)="askToAPI1(i)">
             <img
               class="faceVisibleImg"
-              src="https://assetsnffrgf-a.akamaihd.net/assets/m/502013285/univ/art/502013285_univ_lsr_xl.jpg"
+              src="../../../assets/images/hugo.jpg"
               alt="citrouille"
             />
-            <div>
-              <img [src]="card.posterUrl" />
-            </div>
           </button>
-    </div>
+          <img *ngIf="card?.posterUrl" [src]="card.posterUrl" />
+        </div>
+
+        <div *ngFor="let card of decks2; let j=index" >
+          <button (click)="askToAPI2(j)">
+              <img
+                class="faceVisibleImg"
+                src="../../../assets/images/emeline.jpg"
+                alt="citrouille"
+              />
+            </button>
+            <img *ngIf="card?.posterUrl" [src]="card.posterUrl" />
+          </div>
   </div>
 
 
