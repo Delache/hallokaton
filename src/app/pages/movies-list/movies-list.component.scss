@@ -8,7 +8,6 @@
   button{
     background-color: black;
     padding: 0;
-    border-radius: 30px;
   }
   .citrouilleCarte{
     display: flex;
@@ -23,9 +22,7 @@ img{
   width: 200px;
   border-radius: 30px;
 }
-// .cartePlayer1{
-//   margin-right: 50px;;
-// }
+
 .buttonSurvive{
   position: fixed;
   top: 55vh;
@@ -39,9 +36,12 @@ img{
   display:flex;
   flex-direction: row-reverse;
 }
-.m1{
- margin-right: 30px;
-}
 .m2{
   margin-left: 30px;
+}
+.m1{
+  margin-right: 30px;
+}
+.m2, .m1{
+  border-radius: 30px;
 }

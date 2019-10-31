@@ -1,5 +1,4 @@
 import { MoviesListComponent } from './pages/movies-list/movies-list.component';
-
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -11,8 +10,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MonsterComponent } from './monster/monster.component';
-import { MovieComponent } from './movie/movie.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MonsterChoiceComponent } from './pages/monster-choice/monster-choice.component';
 import { PlayersNameFormsComponent } from './players-name-forms/players-name-forms.component';
@@ -20,19 +17,11 @@ import { NavBarPlayerComponent } from './nav-bar-player/nav-bar-player.component
 import { FinalscoreComponent } from './pages/finalscore/finalscore.component';
 import { ThanksComponent } from './pages/thanks/thanks.component';
 
-
-
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     PlayersNameFormsComponent,
-    MovieComponent,
-    MonsterComponent,
     MonsterChoiceComponent,
     MoviesListComponent,
     NavBarPlayerComponent,
