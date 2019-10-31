@@ -7,17 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-monsters.component.scss']
 })
 export class ListMonstersComponent implements OnInit {
-  result: any
+  result: any;
   constructor(private service: RecupMonstersService) { }
 
   ngOnInit() {
   }
-  
+
   askToAPI() {
     this.service.getAllMonsters()
-    .subscribe((response: any)=> {
-      this.result = response.monsters
-      console.log(this.result)
+    .subscribe((response: any) => {
+      this.result = response.monsters;
+      console.log(this.result);
     })
   }
 

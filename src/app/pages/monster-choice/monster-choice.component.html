@@ -1,21 +1,29 @@
 <div class="navBarPage">
   <app-nav-bar-player></app-nav-bar-player>
-  <div class='monsterGalery'>
-      <div class='monsterPlayer2'>
-        <div *ngFor="let monster of monsters">
-          <img class='monsterCard' ondblclick='getAvatarPlayer2()' src="{{monster.picture}}" alt="Monstre">
-        </div>
+  <div class="monsterGalery">
+    <div class="monsterPlayer1">
+      <div *ngFor="let monster of monsters">
+        <img class="monsterCard" (click)="getAvatarPlayer1()" src="{{ monster.picture }}" alt="Monstre"/>
       </div>
-      <div class='monsterPlayer2'>
-        <div *ngFor="let monster of monsters">
-            <label>
-                <input type="checkbox"  />
-                <div class="card">
-                  <img class='monsterCard' ondblclick='getAvatarPlayer2()' src="{{monster.picture}}" alt="Monstre">
-                  <div class="back monsterCard">{{monster.name}}</div>
-                </div>
-            </label>
+    </div>
+
+    <div class="monsterPlayer2">
+      <div *ngFor="let monster of monsters">
+        <img class="monsterCard" (click)="getAvatarPlayer2(monster)" src="{{ monster.picture }}" alt="Monstre"/>
       </div>
+    </div>
 
+    <!-- <div class="monsterPlayer2">
+      <div *ngFor="let monster of monsters">
+        <label>
+          <input type="checkbox" />
+          <div class="card">
+            <img class="monsterCard" ondblclick="getAvatarPlayer2()" src="{{ monster.picture }}" alt="Monstre"/>
+            <div class="back monsterCard">{{ monster.name }}</div>
+          </div>
+        </label>
+      </div>
+    </div> -->
 
+  </div>
 </div>
