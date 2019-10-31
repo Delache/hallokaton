@@ -1,3 +1,4 @@
+import { ThanksComponent } from './pages/thanks/thanks.component';
 import { MoviesListComponent } from './pages/movies-list/movies-list.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: 'monsterChoice', component: MonsterChoiceComponent },
   { path: 'moviesList', component: MoviesListComponent },
   { path: 'navBarPlayer', component: NavBarPlayerComponent },
-  { path: 'finalScore', component: FinalscoreComponent }
+  { path: 'finalScore', component: FinalscoreComponent },
+  { path: 'thanks', component: ThanksComponent}
 ];
 
 @NgModule({
