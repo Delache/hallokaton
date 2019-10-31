@@ -11,6 +11,7 @@ export class PlayersNameFormsComponent implements OnInit {
   player1: string;
   player2: string;
 
+
   constructor(public dialogRef: MatDialogRef<PlayersNameFormsComponent>, private recupPlayerName: RecupPlayerNameService) {}
 
   ngOnInit() {}

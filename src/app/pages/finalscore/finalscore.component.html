@@ -1,11 +1,11 @@
 <div class="score">
 
-  <p>{{this.player1}} is alive</p>
-  <p>Score: 1200 pts</p>
+  <p>{{this.player1}} is {{this.alive1}}</p>
+  <p>Score: {{score1}} pts</p>
 
-  <p>{{this.player2}} is dead</p>
-  <p>Score: 800 pts </p>
+  <p>{{this.player2}} is {{this.dead1}}</p>
+  <p>Score: {{score2}} </p>
 
-  <button mat-raised-button [routerLink]="['/thanks']" (click)="closeDialog()">Continue</button>
+  <button mat-raised-button [routerLink]="['/thanks']" (click)="closeDialog()">...</button>
 </div>
 
