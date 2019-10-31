@@ -1,7 +1,11 @@
-<p>Player1: {{this.player1}}</p>
-<p>Player2: {{this.player2}}</p>
+<div class="score">
 
-<p>Score: 1200 pts</p>
-<p>Score: 800 pts </p>
+  <p>Survivor 1: {{this.player1}} is alive</p>
+  <p>Score: 1200 pts</p>
 
+  <p>Survivor 2: {{this.player2}} is dead</p>
+  <p>Score: 800 pts </p>
+
+  <button mat-raised-button [routerLink]="['/thanks']" (click)="closeDialog()">Continue</button>
+</div>
 
