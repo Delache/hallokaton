@@ -1,3 +1,5 @@
+import { MoviesListComponent } from './pages/movies-list/movies-list.component';
+
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -7,13 +9,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListMonstersComponent } from './list-monsters/list-monsters.component';
 import { MonsterComponent } from './monster/monster.component';
 import { MovieComponent } from './movie/movie.component';
-import { ListMoviesComponent } from './pages/fightPage/list-movies/list-movies.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MonsterChoiceComponent } from './pages/monster-choice/monster-choice.component';
 import { PlayersNameFormsComponent } from './players-name-forms/players-name-forms.component';
@@ -21,7 +21,6 @@ import { NavBarPlayerComponent } from './nav-bar-player/nav-bar-player.component
 
 
 
-import { FightPageComponent } from './pages/fightPage/fight-page/fight-page.component'
 
 
 
@@ -35,11 +34,8 @@ import { FightPageComponent } from './pages/fightPage/fight-page/fight-page.comp
     MonsterComponent,
     ListMonstersComponent,
     MonsterChoiceComponent,
-    ListMoviesComponent,
-
+    MoviesListComponent,
     NavBarPlayerComponent,
-    FightPageComponent
-
   ],
   imports: [
     BrowserModule,
