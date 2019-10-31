@@ -18,6 +18,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { MonsterChoiceComponent } from './pages/monster-choice/monster-choice.component';
 import { PlayersNameFormsComponent } from './players-name-forms/players-name-forms.component';
 import { NavBarPlayerComponent } from './nav-bar-player/nav-bar-player.component';
+import { FinalscoreComponent } from './pages/finalscore/finalscore.component';
 
 
 
@@ -36,6 +37,7 @@ import { NavBarPlayerComponent } from './nav-bar-player/nav-bar-player.component
     MonsterChoiceComponent,
     MoviesListComponent,
     NavBarPlayerComponent,
+    FinalscoreComponent,
   ],
   imports: [
     BrowserModule,
