@@ -1,5 +1,7 @@
 import { RecupMonstersService } from '../../services/recup-monsters.service';
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { FinalscoreComponent } from '../finalscore/finalscore.component';
 
 @Component({
   selector: 'app-movies-list',
@@ -15,7 +17,7 @@ export class MoviesListComponent implements OnInit {
   decks: any [] = [{}, {}, {}];
   decks2: any [] = [{}, {}, {}];
 
-  constructor(private service: RecupMonstersService) {}
+  constructor(private service: RecupMonstersService, public dialogTwo: MatDialog) {}
 
   ngOnInit() { }
 
@@ -35,7 +37,8 @@ export class MoviesListComponent implements OnInit {
 
 }
 openSurvive(): void {
-  const dialogRef = this.dialog.open(FinalScore, {
+  const dialogRef = this.dialogTwo.open(FinalscoreComponent, {
     width: '500px',
   });
+}
 }

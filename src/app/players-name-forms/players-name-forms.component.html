@@ -1,15 +1,15 @@
 <form class="example-form">
   <div>
     <mat-form-field class="example-full-width">
-      <input matInput placeholder="Joueur 1" [(ngModel)]="player1" [ngModelOptions]= "{standalone: true}"/>
+      <input matInput placeholder="Survivor 1" [(ngModel)]="player1" [ngModelOptions]= "{standalone: true}"/>
     </mat-form-field>
   </div>
   <div>
     <mat-form-field class="example-full-width">
-      <input matInput placeholder="Joueur 2" [(ngModel)]="player2" [ngModelOptions]= "{standalone: true}" />
+      <input matInput placeholder="Survivor 2" [(ngModel)]="player2" [ngModelOptions]= "{standalone: true}" />
     </mat-form-field>
   </div>
   <div>
-    <button mat-raised-button [routerLink]="['/monsterChoice']" (click)="closeDialog()">Valider</button>
+    <button mat-raised-button [routerLink]="['/monsterChoice']" (click)="closeDialog()">Go to Kill!</button>
   </div>
 </form>
