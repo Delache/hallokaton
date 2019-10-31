@@ -1,5 +1,8 @@
 <div class="monsterPage">
   <app-nav-bar-player></app-nav-bar-player>
+  <div>
+    <button mat-raised-button [routerLink]="['/moviesList']">Fight!</button>
+  </div>
   <div class="monsterGalery">
     <div class="monsterPlayer2">
       <div *ngFor="let monster of monsters">
