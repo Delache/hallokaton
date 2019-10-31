@@ -4,7 +4,9 @@
     <p class="P1">{{player1}}</p>
     <img [src]="avatar1" alt="Photo d'un monstre"  >
   </div>
-
+  <div>
+    <button mat-raised-button [routerLink]="['/moviesList']">Fight!</button>
+  </div>
   <div class="player2">
     <img [src]="avatar2" alt="Photo d'un monstre"  >
     <p>{{player2}}</p>

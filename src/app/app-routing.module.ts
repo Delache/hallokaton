@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: 'home', component: HomeComponent },
   { path: 'monsterChoice', component: MonsterChoiceComponent },
-  { path: 'movies-list', component: MoviesListComponent },
+  { path: 'moviesList', component: MoviesListComponent },
   { path: 'navBarPlayer', component: NavBarPlayerComponent },
 ];
 
