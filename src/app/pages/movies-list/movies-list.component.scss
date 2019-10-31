@@ -1,6 +1,6 @@
-.faceVisibleImg {
-    width: 400px;
-  }
+// .faceVisibleImg {
+//     width: 400px;
+//   }
   .container{
     display: flex;
     flex-direction: column;
@@ -9,4 +9,20 @@
   }
   button{
     background-image: black;
+    padding: 0;
   }
+  .citrouilleCarte{
+    display: flex;
+    justify-content: space-between;
+  }
+.cartePlayer1, .cartePlayer2{
+  display: flex;
+  flex-direction: column;
+}
+img{
+  height: 300px;
+  width: 200px;
+}
+.cartePlayer1{
+  margin-right: 50px;;
+}

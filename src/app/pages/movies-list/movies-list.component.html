@@ -1,57 +1,34 @@
 <div class="container">
   <app-nav-bar-player></app-nav-bar-player>
-  <!-- <div>
-    <button (click)="askToAPI1()">
-      <img
-        class="faceVisibleImg"
-        src="https://assetsnffrgf-a.akamaihd.net/assets/m/502013285/univ/art/502013285_univ_lsr_xl.jpg"
-        alt="citrouille"
-      />
-      <div>
-        <img [src]="this.result.posterUrl" />
-      </div>
-    </button>
-  </div>
 
-  <div>
-    <button (click)="askToAPI2()">
-      <img
-        class="faceVisibleImg"
-        src="https://assetsnffrgf-a.akamaihd.net/assets/m/502013285/univ/art/502013285_univ_lsr_xl.jpg"
-        alt="citrouille"
-      />
-      <div>
-        <img [src]="this.result.posterUrl" />
-      </div>
-    </button>
-  </div> -->
+  <div class="citrouilleCarte">
 
-
-  <div class="citrouilleCarte" >
-    <div *ngFor="let card of decks; let i=index" >
+    <div class="cartePlayer1" >
+      <div *ngFor="let card of decks; let i = index">
         <button (click)="askToAPI1(i)">
+          <img
+            class="faceVisibleImg"
+            src="../../../assets/images/hugo.jpg"
+            alt="citrouille"
+          />
+        </button>
+        <img *ngIf="card?.posterUrl" [src]="card.posterUrl" />
+      </div>
+    </div>
+
+<button>How Survive?</button>
+
+    <div class="cartePlayer2" >
+      <div *ngFor="let card of decks2; let j = index">
+        <img *ngIf="card?.posterUrl" [src]="card.posterUrl" />
+        <button (click)="askToAPI2(j)">
             <img
               class="faceVisibleImg"
-              src="../../../assets/images/hugo.jpg"
+              src="../../../assets/images/emeline.jpg"
               alt="citrouille"
             />
-          </button>
-          <img *ngIf="card?.posterUrl" [src]="card.posterUrl" />
-        </div>
-
-        <div *ngFor="let card of decks2; let j=index" >
-          <button (click)="askToAPI2(j)">
-              <img
-                class="faceVisibleImg"
-                src="../../../assets/images/emeline.jpg"
-                alt="citrouille"
-              />
-            </button>
-            <img *ngIf="card?.posterUrl" [src]="card.posterUrl" />
-          </div>
+        </button>
+      </div>
+    </div>
   </div>
-
-
 </div>
-
-

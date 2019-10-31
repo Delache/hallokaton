@@ -12,8 +12,6 @@ export class MoviesListComponent implements OnInit {
   randID1: number;
   randID2: number;
 
-
-  // decks: any[][] = [[{},{},{}],[{},{},{}]];
   decks: any [] = [{}, {}, {}];
   decks2: any [] = [{}, {}, {}];
 
@@ -21,24 +19,9 @@ export class MoviesListComponent implements OnInit {
 
   ngOnInit() { }
 
-
-  // askToAPI1() {
-  //   const randID1 = Math.floor(Math.random() * 82) + 1;
-  //   this.service.getById(randID1).subscribe((maCarteRandom: any) => {
-  //     this.result = maCarteRandom.movie;
-  //   });
-  // }
-  // askToAPI2() {
-  //   const randID1 = Math.floor(Math.random() * 82) + 1;
-  //   this.service.getById(randID1).subscribe((maCarteRandom: any) => {
-  //     this.result = maCarteRandom.movie;
-  // });
-  // }
-
   askToAPI1(i: number){
     const randID1 = Math.floor(Math.random() * 82) + 1;
     this.service.getById(randID1).subscribe((maCarteRandom: any) => {
-      // this.decks[i][j] = maCarteRandom.movie;
       this.decks[i] = maCarteRandom.movie;
   });
 
@@ -47,14 +30,12 @@ export class MoviesListComponent implements OnInit {
   askToAPI2( j: number){
     const randID1 = Math.floor(Math.random() * 82) + 1;
     this.service.getById(randID1).subscribe((maCarteRandom: any) => {
-      // this.decks[i][j] = maCarteRandom.movie;
       this.decks2[j] = maCarteRandom.movie;
   });
 
 }
-  // this.service.getAllMovies()
-  // .subscribe((response: any)=> {
-  //   this.result = response.movies
-  //   console.log(this.result)
-  // })
+openSurvive(): void {
+  const dialogRef = this.dialog.open(FinalScore, {
+    width: '500px',
+  });
 }
