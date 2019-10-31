@@ -1,3 +1,4 @@
+
 import { RecupMonstersService } from './../services/recup-monsters.service';
 import { RecupPlayerNameService } from './../services/recup-player-name.service';
 import { Component, OnInit } from '@angular/core';
@@ -23,6 +24,6 @@ this.avatar1 = this.monster.monsterOne;
 this.avatar2 = this.monster.monsterTwo;
 this.selector1 = this.monster.selector1;
 this.selector2 = this.monster.selector2;
-  }
 
+}
 }

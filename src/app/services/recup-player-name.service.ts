@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class RecupPlayerNameService {
+
 player1: string;
 player2: string;
 
@@ -16,4 +17,8 @@ player2: string;
     this.player2 = name;
     console.log(this.player2);
   }
+
+
+  
+
 }

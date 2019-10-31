@@ -21,6 +21,10 @@ import { NavBarPlayerComponent } from './nav-bar-player/nav-bar-player.component
 
 
 
+import { FightPageComponent } from './pages/fightPage/fight-page/fight-page.component'
+
+
+
 
 @NgModule({
   declarations: [
@@ -32,7 +36,10 @@ import { NavBarPlayerComponent } from './nav-bar-player/nav-bar-player.component
     ListMonstersComponent,
     MonsterChoiceComponent,
     ListMoviesComponent,
-    NavBarPlayerComponent
+
+    NavBarPlayerComponent,
+    FightPageComponent
+
   ],
   imports: [
     BrowserModule,

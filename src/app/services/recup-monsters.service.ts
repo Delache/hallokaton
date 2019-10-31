@@ -21,6 +21,7 @@ export class RecupMonstersService {
   getAllMovies() {
     return this.http.get(RecupMonstersService.URL + "/movies");
   }
+
   getFirstMonster(data) {
     this.monsterOne = data;
     console.log(this.monsterOne);
@@ -35,4 +36,11 @@ export class RecupMonstersService {
 //   getSelector2(data) {
 //     this.selector2 = data;
 //       }
+
+
+  getById(id: number) {
+    return this.http.get(RecupMonstersService.URL+"/movies/"+id)
+  }
+
+
 }
