@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   }
   openDialog(): void {
     const dialogRef = this.dialog.open(PlayersNameFormsComponent, {
-      width: '500px',
+      width: '250px',
     });
   }
 }

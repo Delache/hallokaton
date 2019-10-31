@@ -11,7 +11,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ListMonstersComponent } from './list-monsters/list-monsters.component';
 import { MonsterComponent } from './monster/monster.component';
 import { MovieComponent } from './movie/movie.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -34,7 +33,6 @@ import { ThanksComponent } from './pages/thanks/thanks.component';
     PlayersNameFormsComponent,
     MovieComponent,
     MonsterComponent,
-    ListMonstersComponent,
     MonsterChoiceComponent,
     MoviesListComponent,
     NavBarPlayerComponent,
